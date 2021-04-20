@@ -1,0 +1,19 @@
+{
+  "name": "immigrants-trend",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.6.0",
+    "danfojs": "^0.2.5",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.1.5"
+  }
+}
