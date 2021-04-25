@@ -1,5 +1,6 @@
 {
   "name": "immigrants-trend",
+  "author": "고아침 <achim.koh@gmail.com>",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,9 +8,15 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@j-t-mcc/vue3-chartjs": "^1.0.0",
     "@vue-leaflet/vue-leaflet": "^0.6.0",
-    "danfojs": "^0.2.5",
-    "vue": "^3.0.5"
+    "chart.js": "^3.2.0",
+    "chroma-js": "^2.1.1",
+    "d3-dsv": "^2.0.0",
+    "d3-fetch": "^2.0.0",
+    "leaflet": "^1.7.1",
+    "vue": "^3.0.5",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",
