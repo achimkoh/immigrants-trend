@@ -96,7 +96,9 @@ export default {
     }
   },
   async mounted () {
-    const csv = await d3.csv('/지방자치단체외국인주민현황-시군구.csv', this.parseNumbers)
+    const csv = await d3.csv('/%E1%84%8C%E1%85%B5%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A1%E1%84%8E%E1%85%B5%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%8B%E1%85%AC%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%AE%E1%84%86%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%AA%E1%86%BC-%E1%84%89%E1%85%B5%E1%84%80%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AE.csv', this.parseNumbers)
+    // const csv = await d3.csv('https://korea-immigrant-trend.s3.ap-northeast-2.amazonaws.com/%E1%84%8C%E1%85%B5%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8C%E1%85%A1%E1%84%8E%E1%85%B5%E1%84%83%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%8B%E1%85%AC%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%AE%E1%84%86%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%AA%E1%86%BC-%E1%84%89%E1%85%B5%E1%84%80%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AE.csv', this.parseNumbers)
+
     this.csv = csv
     // DEPRECATED: 시군구 geojson 데이터에 포함된 지자체만 다시 필터링
     // this.csv = csv.filter(row => this.geojson.features.map(f => f.properties.sgg).includes(row.SGGCD))
